@@ -39,9 +39,11 @@ import SupportIcon from './icons/IconSupport.vue'
       <div class="row">
         <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
           <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <div class="icon"><i class="bx bx-book-reader"></i></div>
             <h1 class="title">
-              <a href="">Lorem Ipsum</a>
+                <RouterLink to="/exams">
+                  Imtixonlar ro'yxati
+                </RouterLink>
             </h1>
             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
           </div>

@@ -1,19 +1,19 @@
 <template>
-<main id="main">
+    <main id="main">
   <section id="faq" class="faq section-bg">
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <p>Fakultetingizni tanlang</p>
+        <p>Guruxingizni tanlang</p>
       </div>
 
       <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
 
-        <li v-for="(fakulty, index) in this.fakulty" :key="index">
+        <li v-for="(group, index) in this.groups" :key="index">
           <div class="collapsed question">
             <h3>
-              <router-link :to="{ name: 'groups', params: { id: fakulty.id }}">
-               <b>{{ index+1 }})</b> {{ fakulty.name }}
+              <router-link :to="{ name: 'table', params: { group_id: group.id }}">
+               <b>{{ index+1 }})</b> {{ group.name }}
               </router-link>
             </h3>
             </div>
@@ -32,18 +32,18 @@ export default {
     name: 'students',
     data(){
         return{
-            fakulty: []
+            groups: []
         }
     },
     mounted(){
-        this.getFakulty();
-        console.log(this.fakulty)
+        this.getGroup();
+        console.log(this.groups)
     },
     methods: {
-        getFakulty(){
+        getGroup(){
             axios.defaults.headers.common = {'Authorization': `Bearer KK4aIC3gN4mWOpgSfutBLCJ5ipn4gnUF`}
-            axios.get('https://student.jdpu.uz/rest/v1/data/department-list?page=1&limit=200&_structure_type=11').then(res=>{
-                this.fakulty = res.data.data.items
+            axios.get('https://student.jdpu.uz/rest/v1/data/group-list?page=1&limit=200&_department='+this.$route.params.id).then(res=>{
+                this.groups = res.data.data.items
                 console.log(res.data.data.items) 
             })
         }
