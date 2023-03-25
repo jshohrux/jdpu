@@ -1,32 +1,25 @@
 <template>
-    <main id="main">
+  <main id="main">
+  <section class="breadcrumbs">
+    <div class="container">
 
-<!-- ======= Breadcrumbs Section ======= -->
-<section class="breadcrumbs">
-  <div class="container">
-
-    <div class="d-flex justify-content-between align-items-center">
-      <h2>Fakultetlar</h2>
-      <ol>
-        <li><a href="index.html">Bosh sahifa</a></li>
-        <li>Fakultetlar</li>
-      </ol>
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Fakultetlar</h2>
+        <ol>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li>Fakultetlar</li>
+        </ol>
+      </div>
     </div>
-
-  </div>
-</section><!-- End Breadcrumbs Section -->
-
-<!-- <section class="inner-page">
-  <div class="container">
-    <p>
-      Example inner page template
-    </p>
-  </div>
-</section> -->
-
-<section class="about">
+  </section>
+  <section class="about">
     <h2 class="text-center">Jizzax davlar pedagogika universitetining fakultetlari ro'yxati</h2>
     <hr>
+    <div class="d-flex justify-content-center" v-if="fakulty.length==0">
+      <div class="spinner-border" role="status">
+        <span class="sr-only"></span>
+      </div>
+    </div>
     <div class="container">
     <div>
         <ol class="gradient-list">
@@ -38,7 +31,7 @@
         </ol>
     </div>
     </div>
-  </section><!-- End About Section -->
+  </section>
 
 </main><!-- End #main -->
 </template>

@@ -4,6 +4,9 @@ import FacultyView from '../views/FacultyView.vue'
 import ExamFacultyView from '../views/exam/FacultyView.vue'
 import GroupView from '../views/exam/GroupView.vue'
 import TableView from '../views/exam/Table.vue'
+import ScheduleFacultyView from '../views/schedule/FacultyView.vue'
+import CourseView from '../views/schedule/CourseView.vue'
+import ScheduleGroupView from '../views/schedule/GroupView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +41,21 @@ const router = createRouter({
       path: '/exams/:id/:group_id',
       name: 'table',
       component: TableView
+    },
+    {
+      path: '/schedule',
+      name: 'schedule',
+      component: ScheduleFacultyView
+    },
+    {
+      path: '/schedule/:id',
+      name: 'course',
+      component: CourseView
+    },
+    {
+      path: '/schedule/:id/:year',
+      name: 'schedule_group',
+      component: ScheduleGroupView
     }
   ],
   scrollBehavior(to, from, savedPosition) {

@@ -455,17 +455,17 @@ h6,
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
 .section-bg {
-  background-color: #fef8f5;
+  background-color: #ffffff;
 }
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .section-title h2 {
@@ -832,7 +832,7 @@ section {
 # F.A.Q
 --------------------------------------------------------------*/
 .faq {
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .faq .faq-list {
@@ -1187,7 +1187,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   /* background: #fff; */
-  padding: 0 0 30px 0;
+  padding: 0 0 20px 0;
   color: #212529;
   font-size: 14px;
   background: #42c9ff;

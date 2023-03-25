@@ -14,14 +14,14 @@
       </div>
 
       <div class="dropdown">
-  <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown"><span class="fi fi-uz"></span> O'zbek
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
-</div>
+        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown"><span class="fi fi-uz"></span> O'zbek
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul>
+      </div>
 
       <!-- <nav id="navbar" class="navbar">
         <ul>
