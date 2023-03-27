@@ -2,12 +2,25 @@
     <main id="main">
       <section class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Fakultetlar</h2>
+          <h2>Guruhlar</h2>
           <ol>
-            <li><a href="index.html">Bosh sahifa</a></li>
-            <li>Fakultetlar</li>
+            <li>
+              <router-link to="/">
+                Bosh sahifa
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/schedule">
+                Fakultetlar
+              </router-link>
+            </li>
+            <li>
+              <a href="#" @click="$router.back()">
+                Kurslar
+              </a>
+            </li>
+            <li>Guruhlar</li>
           </ol>
         </div>
 
@@ -28,10 +41,10 @@
         <div class="card border-0" v-for="(item, index) in this.data" :key="index">
           <div class="card-header p-0" id="heading-1" style="line-height: 1;">
             <h2 class="mb-0" style="line-height: 1;">
-              <router-link :to="{ name: 'schedule'}" class="btn btn-link btn-block bg-transparent text-left text-decoration-none p-4 collapsed">
+              <RouterLink :to="{ path: year+'/'+item.id }" class="btn btn-link btn-block bg-transparent text-left text-decoration-none p-4 collapsed">
                 <h2><b>{{ index+1 }})</b> {{ item.name }}</h2>
                 <i class="fa fa-chevron-right float-right"></i>                            
-              </router-link>                    
+              </RouterLink>                    
             </h2>
           </div>   
         </div>
@@ -84,7 +97,7 @@ export default {
                     }
                 }
                 if(arr.length==0){
-                    this.data = this.group
+                    this.data = this.groups
                 }
                 else{
                     this.data = arr

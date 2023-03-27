@@ -7,6 +7,9 @@ import TableView from '../views/exam/Table.vue'
 import ScheduleFacultyView from '../views/schedule/FacultyView.vue'
 import CourseView from '../views/schedule/CourseView.vue'
 import ScheduleGroupView from '../views/schedule/GroupView.vue'
+import ScheduleView from '../views/schedule/ScheduleView.vue'
+
+import ExamCourseView from '../views/exam/CourseView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,16 +35,30 @@ const router = createRouter({
       name: 'exams',
       component: ExamFacultyView
     },
+    // {
+    //   path: '/exams/:id/:year',
+    //   name: 'groups',
+    //   component: GroupView
+    // },
     {
-      path: '/exams/:id',
-      name: 'groups',
-      component: GroupView
-    },
-    {
-      path: '/exams/:id/:group_id',
+      path: '/exams/:id/:year/:group_id',
       name: 'table',
       component: TableView
     },
+    
+    {
+      path: '/exams/:id',
+      name: 'course_exam',
+      component: ExamCourseView
+    },
+
+    {
+      path: '/exams/:id/:year',
+      name: 'groups',
+      component: GroupView
+    },
+
+    // 
     {
       path: '/schedule',
       name: 'schedule',
@@ -56,6 +73,11 @@ const router = createRouter({
       path: '/schedule/:id/:year',
       name: 'schedule_group',
       component: ScheduleGroupView
+    },
+    {
+      path: '/schedule/:id/:year/:group_id',
+      name: '/schedule_table',
+      component: ScheduleView
     }
   ],
   scrollBehavior(to, from, savedPosition) {

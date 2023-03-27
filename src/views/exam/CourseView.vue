@@ -1,6 +1,5 @@
 <template>
     <main id="main">
-
       <section class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
@@ -12,7 +11,7 @@
               </router-link>
             </li>
             <li>
-              <router-link to="/schedule">
+              <router-link to="/exams">
                 Fakultetlar
               </router-link>
             </li>

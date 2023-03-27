@@ -5,7 +5,11 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Fakultetlar</h2>
           <ol>
-            <li><a href="index.html">Bosh sahifa</a></li>
+            <li>
+              <router-link to="/">
+                Bosh sahifa
+              </router-link>
+            </li>
             <li>Fakultetlar</li>
           </ol>
         </div>
@@ -29,7 +33,7 @@
         <li v-for="(fakulty, index) in this.fakulty" :key="index">
           <div class="collapsed question">
             <h3>
-              <router-link :to="{ name: 'groups', params: { id: fakulty.id }}">
+              <router-link :to="{ name: 'course_exam', params: { id: fakulty.id }}">
                <b>{{ index+1 }})</b> {{ fakulty.name }}
               </router-link>
             </h3>
@@ -62,7 +66,6 @@ export default {
             axios.defaults.headers.common = {'Authorization': `Bearer KK4aIC3gN4mWOpgSfutBLCJ5ipn4gnUF`}
             axios.get('https://student.jdpu.uz/rest/v1/data/department-list?page=1&limit=200&_structure_type=11').then(res=>{
                 this.fakulty = res.data.data.items
-                console.log(res.data.data.items) 
             })
         }
     }

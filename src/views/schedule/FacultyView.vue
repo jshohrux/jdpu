@@ -5,7 +5,9 @@
             <div class="d-flex justify-content-between align-items-center">
               <h2>Fakultetlar</h2>
               <ol>
-                <li><a href="index.html">Bosh sahifa</a></li>
+                <li>
+                  <router-link to="/">Bosh sahifa</router-link>
+                </li>
                 <li>Fakultetlar</li>
               </ol>
             </div>
