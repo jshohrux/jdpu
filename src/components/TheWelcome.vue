@@ -19,7 +19,7 @@ import SupportIcon from './icons/IconSupport.vue'
             <h1 class="title">
                 Imtihonlar ro'yxati
             </h1>
-            <p class="description">Jizzax Davlat Pedagogika Universiteti imtihonlar ro'yhati bilan tanishishingiz mumkin</p>
+            <p class="description">Jizzax davlat pedagogika universiteti imtihonlar ro'yxati bilan tanishishingiz mumkin</p>
           </RouterLink>
           </div>
         </div>
@@ -29,7 +29,7 @@ import SupportIcon from './icons/IconSupport.vue'
             <RouterLink to="/schedule">
               <div class="icon"><i class="bx bx-grid"></i></div>
               <h4 class="title">Dars jadvali</h4>
-              <p class="description">JDPU ochiq dars jadvallari bilan tanishishingiz mumkin</p>
+              <p class="description">Jizzax davlat pedagogika universiteti ochiq dars jadvallari bilan tanishishingiz mumkin</p>
             </RouterLink>
           </div>
         </div>
@@ -39,7 +39,7 @@ import SupportIcon from './icons/IconSupport.vue'
             <RouterLink to="/faculties">
               <div class="icon"><i class="bx bx-book-bookmark"></i></div>
               <h4 class="title">Fakultetlar</h4>
-              <p class="description">Jizzax Davlat Pedagogika Universiteti fakultetlar ro'yhati bilan tanishishingiz mumkin</p>
+              <p class="description">Jizzax davlat pedagogika universiteti fakultetlar ro'yxati bilan tanishishingiz mumkin</p>
             </RouterLink>
           </div>
         </div>
