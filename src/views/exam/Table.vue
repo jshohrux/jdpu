@@ -93,6 +93,7 @@ export default {
     overflow-x: scroll;
     width: 100%; 
     border-collapse: collapse; 
+    vertical-align: middle;
   }
   tr:nth-of-type(odd) { 
     background: #eee; 
