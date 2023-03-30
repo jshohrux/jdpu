@@ -35,7 +35,7 @@
     </div>
     <div class="container" data-aos="fade-up" v-else>
       <div class="section-title">
-        <p>Guruxingizni tanlang</p>
+        <p>Guruhingizni tanlang</p>
       </div>
       <div class="accordion mt-4 mb-5" id="aboutCommeeteAccordion" >
         <div class="card border-0" v-for="(item, index) in this.data" :key="index">
