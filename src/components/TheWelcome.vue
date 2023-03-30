@@ -12,7 +12,7 @@ import SupportIcon from './icons/IconSupport.vue'
   <section id="services" class="services section-bg">
     <div class="container ">
       <div class="row justify-content-between cards">
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+        <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
           <div class="icon-box">
             <RouterLink to="/exams">
             <div class="icon"><i class="bx bx-book-reader"></i></div>
@@ -24,7 +24,7 @@ import SupportIcon from './icons/IconSupport.vue'
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+        <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
           <div class="icon-box">
             <RouterLink to="/schedule">
               <div class="icon"><i class="bx bx-grid"></i></div>
@@ -34,7 +34,7 @@ import SupportIcon from './icons/IconSupport.vue'
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+        <!-- <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
           <div class="icon-box">
             <RouterLink to="/faculties">
               <div class="icon"><i class="bx bx-book-bookmark"></i></div>
@@ -42,7 +42,7 @@ import SupportIcon from './icons/IconSupport.vue'
               <p class="description">Jizzax davlat pedagogika universiteti fakultetlar ro'yxati bilan tanishishingiz mumkin</p>
             </RouterLink>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
