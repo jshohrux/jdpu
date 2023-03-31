@@ -9,41 +9,43 @@
           </div>
     
         <div class="container p-0" v-if="data.length!==0">
-        <div class="row item mb-4" v-for="(value, keyob) in this.days">
-            <div class="col-12 col-md-1 py-4 d-flex align-items-center justify-content-center" style="background-color: #285bad9e;">
-                <p class="m-0 writing-mode vertical-text" >
-                    {{ value }}
-                </p>
-            </div>
-            <div class="col-12 col-md-11 d-flex py-1 align-items-center justify-content-center">
-                <table class="table table-striped" style="overflow-x: scroll">
-                    <thead>
-                        <tr style="background-color: #285bad9e;">
-                            <th scope="col" style="font-weight: 500">#</th>
-                            <th scope="col" style="font-weight: 500">Kirish</th>
-                            <th scope="col" style="font-weight: 500">Chiqish</th>
-                            <th scope="col" style="font-weight: 500">Fan nomi</th>
-                            <th scope="col" style="font-weight: 500">Xona</th>
-                            <th scope="col" style="font-weight: 500">Mashg'ulot turi</th>
-                            <th scope="col" style="font-weight: 500">O'qituvchi</th>
-                        </tr>
-                    </thead>
-                    <tbody v-for="(data, index) in this.data" :key="index">
-                        <tr v-if="data.lesson_date==keyob">
-                            <th scope="row">{{index}}</th>
-                            <td>{{data.lessonPair.start_time}}</td>
-                            <td>{{data.lessonPair.end_time}}</td>
-                            <td>{{ data.subject.name }}</td>
-                            <td>{{ data.auditorium.name }}</td>
-                            <td>{{ data.trainingType.name }}</td>
-                            <td>{{ data.employee.name }}</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="row item mb-4" v-for="(value, keyob) in this.days">
+                <div class="col-12 col-md-1 py-4 d-flex align-items-center justify-content-center" style="background-color: #285bad9e;">
+                    <p class="m-0 writing-mode vertical-text" >
+                        {{ value }}
+                    </p>
+                </div>
+                <div class="col-12 col-md-11 d-flex py-1 align-items-center justify-content-center">
+                    <table class="table table-striped" style="overflow-x: scroll">
+                        <thead>
+                            <tr style="background-color: #285bad9e;">
+                                <th scope="col" style="font-weight: 500">#</th>
+                                <th scope="col" style="font-weight: 500">Kirish</th>
+                                <th scope="col" style="font-weight: 500">Chiqish</th>
+                                <th scope="col" style="font-weight: 500">Fan nomi</th>
+                                <th scope="col" style="font-weight: 500">Xona</th>
+                                <th scope="col" style="font-weight: 500">Mashg'ulot turi</th>
+                                <th scope="col" style="font-weight: 500">O'qituvchi</th>
+                            </tr>
+                        </thead>
+                        <tbody v-for="(data, index) in this.data" :key="index">
+                            <tr v-if="data.lesson_date==keyob">
+                                <th scope="row">{{index}}</th>
+                                <td>{{data.lessonPair.start_time}}</td>
+                                <td>{{data.lessonPair.end_time}}</td>
+                                <td>{{ data.subject.name }}</td>
+                                <td>{{ data.auditorium.name }}</td>
+                                <td>{{ data.trainingType.name }}</td>
+                                <td>{{ data.employee.name }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
-    
+        <div v-else>
+            <h2>Sizda Dars jadvali shakllanmagan</h2>
+        </div>
         </div>
       </section><!-- End F.A.Q Section -->
       </main>
@@ -115,5 +117,9 @@ export default{
         table {
         display: block;
         }
+    }
+    h2{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
     }
 </style>
