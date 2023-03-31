@@ -9,9 +9,9 @@ import SupportIcon from './icons/IconSupport.vue'
 
 <template>
   <main id="main">
-  <section id="services" class="services section-bg">
+  <section class="services section-bg" style="margin-top: 15%;">
     <div class="container ">
-      <div class="row justify-content-between cards">
+      <div class="row justify-content-between ">
         <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
           <div class="icon-box">
             <RouterLink to="/exams">
@@ -25,7 +25,7 @@ import SupportIcon from './icons/IconSupport.vue'
         </div>
 
         <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
-          <div class="icon-box">
+          <div class="icon-box align-items-stretch">
             <RouterLink to="/schedule">
               <div class="icon"><i class="bx bx-grid"></i></div>
               <h4 class="title">Dars jadvali</h4>
@@ -56,5 +56,8 @@ import SupportIcon from './icons/IconSupport.vue'
 .cards{
   align-items: center;
   min-height: 600px;
+}
+.section{
+  margin-top: 15%;
 }
 </style>
